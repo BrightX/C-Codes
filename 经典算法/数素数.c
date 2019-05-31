@@ -9,7 +9,8 @@ int sushu(int n)
             flag = 1;
         else if (!(n%2 && n%3 && n%5 && n%7 && n%11))
             flag = 0;
-        else{
+        else
+        {
             flag = 1;
             for (i = 2; i <= sqrt(n); i++)
             {
