@@ -1,16 +1,23 @@
 #include<stdio.h>
+#include<math.h>
 int sushu(int n)
 {	// 判断n是否是素数，如果是，返回1，否则返回0
     int i, flag = 0;
     if (n > 1)
     {
-        flag = 1;
-        for (i = 2; i < n; i++)
-        {
-            if(n % i == 0)
+        if (n == 2 || n == 3 || n == 5 || n == 7 || n == 11)
+            flag = 1;
+        else if (!(n%2 && n%3 && n%5 && n%7 && n%11))
+            flag = 0;
+        else{
+            flag = 1;
+            for (i = 2; i <= sqrt(n); i++)
             {
-                flag = 0;
-                break;
+                if(n % i == 0)
+                {
+                    flag = 0;
+                    break;
+                }
             }
         }
     }
