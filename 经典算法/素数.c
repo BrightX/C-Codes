@@ -1,20 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int i, flat, n;
+    // 输入一个整数,判断其是否为素数,如果是则输出 Yes,否则输出 No。
+    int i, flag, n;
     scanf("%d", &n);
     if (n > 1)
     {
-        flat = 0;
+        flag = 0;
         for (i = 2; i < n; i++)
         {
             if(n % i == 0)
             {
-                flat = 1;
+                flag = 1;
                 break;
             }
         }
-        if (flat == 0) printf("Yes");
+        if (flag == 0) printf("Yes");
         else  printf("No");
     }
     else
