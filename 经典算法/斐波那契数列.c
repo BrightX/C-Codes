@@ -10,8 +10,8 @@ int main()
 		b = c;
 		printf("%d", c);
 		if (n%5 == 0)
-			   printf("\n");
-		else  printf(" ");
+			printf("\n");
+		else    printf(" ");
 		n++;
 	}
 	return 0;
