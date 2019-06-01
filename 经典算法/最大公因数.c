@@ -1,13 +1,13 @@
 #include<stdio.h>
 int main()
 {
-	int a, b, i;
-	printf("ÊäÈëÁ½¸öÊý£º");
-	scanf("%d%d", &a, &b);
-	i = a;
-	if(a > b)  i = b;
-	while(a%i != 0 || b%i != 0)
-        i--;
-	printf("%dºÍ%dµÄ×î´ó¹«ÒòÊýÎª£º%d\n", a, b, i);
+	// è¾“å…¥ä¸¤ä¸ªæ­£æ•´æ•°må’Œnï¼Œæ±‚å…¶æœ€å¤§å…¬çº¦æ•°ã€‚
+	int m, n, i;
+	scanf("%d%d", &m, &n);
+	i = m;
+	if(m > n)  i = n;
+	while(m%i != 0 || n%i != 0)
+		i--;
+	printf("%d\n", i);
 	return 0;
 }
