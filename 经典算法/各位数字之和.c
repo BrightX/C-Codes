@@ -13,7 +13,6 @@ int sum(int x)
 int main()
 {
 	int a;
-	printf("请输入一个数字："); 
 	scanf("%d",&a);
 	printf("sum = %d\n",sum(a));
 	return 0;
